@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <script>
+        var images = ['img1.jpeg', 'img2.jpeg', 'img3.jpeg'];
+        var currentImageIndex = 0;
+
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('sliderImage').src = images[currentImageIndex];
+        }
+
+        function showPreviousImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            document.getElementById('sliderImage').src = images[currentImageIndex];
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showPreviousImage()">Previous</button>
+    <img id="sliderImage" src="img1.jpeg" alt="Slider Image">
+    <button onclick="showNextImage()">Next</button>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show/Hide Example</title>
+    <script>
+        function toggleVisibility() {
+            var element = document.getElementById("content");
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="toggleVisibility()">Toggle Content</button>
+    <div id="content" style="display: none;">
+        <p>This content can be shown or hidden.</p>
+    </div>
+</body>
+</html>

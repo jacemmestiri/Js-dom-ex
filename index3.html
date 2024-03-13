@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+    <script>
+        function addElement() {
+            // Create a new paragraph element
+            var newParagraph = document.createElement("p");
+            // Add text to the paragraph
+            newParagraph.textContent = "New paragraph added!";
+            // Append the paragraph to the body
+            document.body.appendChild(newParagraph);
+        }
+
+        function removeElement() {
+            // Get the last child element of the body
+            var lastChild = document.body.lastChild;
+            // Remove the last child if it exists
+            if (lastChild) {
+                document.body.removeChild(lastChild);
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Clicking this button will add a new paragraph -->
+    <button onclick="addElement()">Add Paragraph</button>
+    <!-- Clicking this button will remove the last paragraph -->
+    <button onclick="removeElement()">Remove Last Paragraph</button>
+</body>
+</html>

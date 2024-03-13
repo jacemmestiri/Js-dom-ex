@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attribute Example</title>
+    <script>
+        function changeLink() {
+            var link = document.getElementById("myLink");
+            link.href = "https://www.example.com";
+            link.textContent = "Visit Example";
+        }
+    </script>
+</head>
+<body>
+    <a id="myLink" href="#">Click me</a>
+    <button onclick="changeLink()">Change Link</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+    <script>
+        function validateForm() {
+            // Get the value of the input field
+            var inputValue = document.getElementById("inputField").value;
+            
+            // Check if the input value is empty
+            if (inputValue === "") {
+                // Display an error message
+                alert("Please enter a value!");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Form with input field and submit button -->
+    <form onsubmit="return validateForm()">
+        <input type="text" id="inputField" placeholder="Enter a value">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

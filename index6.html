@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function toggleHighlight() {
+            // Get the element with id "demo"
+            var element = document.getElementById("demo");
+            // Toggle the 'highlight' class
+            element.classList.toggle("highlight");
+        }
+    </script>
+</head>
+<body>
+    <!-- Clicking this button will toggle the 'highlight' class -->
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+    <!-- Element to be highlighted -->
+    <p id="demo">This is some text.</p>
+</body>
+</html>
